@@ -1,25 +1,24 @@
-import React from 'react'
-import Link from 'next/link'
+import React from "react";
+import Link from "next/link";
 
 const links = [
-  { href: 'https://zeit.co/now', label: 'ZEIT' },
-  { href: 'https://github.com/zeit/next.js', label: 'GitHub' },
+  { href: "/", label: "Home" },
+  { href: "/Projects", label: "Projects" },
+  { href: "/About", label: "About" },
+  { href: "/Contact", label: "Contact" }
 ].map(link => ({
   ...link,
-  key: `nav-link-${link.href}-${link.label}`,
-}))
+  key: `nav-link-${link.href}-${link.label}`
+}));
 
 const Nav = () => (
   <nav>
     <ul>
-      <li>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </li>
       {links.map(({ key, href, label }) => (
         <li key={key}>
-          <a href={href}>{label}</a>
+          <Link href={href}>
+            <a>{label}</a>
+          </Link>
         </li>
       ))}
     </ul>
@@ -45,12 +44,12 @@ const Nav = () => (
         padding: 6px 8px;
       }
       a {
-        color: #067df7;
+        color: #000;
         text-decoration: none;
         font-size: 13px;
       }
     `}</style>
   </nav>
-)
+);
 
-export default Nav
+export default Nav;
