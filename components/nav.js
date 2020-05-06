@@ -5,10 +5,10 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/Projects", label: "Projects" },
   { href: "/About", label: "About" },
-  { href: "/Contact", label: "Contact" }
-].map(link => ({
+  { href: "/Contact", label: "Contact" },
+].map((link) => ({
   ...link,
-  key: `nav-link-${link.href}-${link.label}`
+  key: `nav-link-${link.href}-${link.label}`,
 }));
 
 const Nav = () => (
@@ -31,6 +31,9 @@ const Nav = () => (
       }
       nav {
         text-align: center;
+        background-color: rbga(0, 0, 0, 0.9);
+        position: relative;
+        padding: 0 1.5em;
       }
       ul {
         display: flex;

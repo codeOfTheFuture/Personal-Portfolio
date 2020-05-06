@@ -1,6 +1,6 @@
-import Nav from "./nav";
+import Nav from "./Nav";
 
-const Layout = props => (
+const Layout = (props) => (
   <div>
     <Nav />
     {props.children}
