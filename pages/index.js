@@ -8,12 +8,6 @@ const Home = () => (
       <Head>
         <title>Jeff Oliver - Portfolio</title>
         <link rel='icon' href='/favicon.ico' />
-        <link
-          href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
-          rel='stylesheet'
-          integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN'
-          crossorigin='anonymous'
-        ></link>
       </Head>
 
       <div className='home-container'>

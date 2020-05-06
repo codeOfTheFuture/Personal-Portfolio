@@ -1,5 +1,13 @@
 import React from "react";
 import Project from "../components/Project";
+import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../styles/fontawesome";
+
+const StyledIcon = styled(FontAwesomeIcon)`
+  color: black;
+  width: 100px;
+`;
 
 const projectsCarousel = () => {
   const projects = [
@@ -15,17 +23,13 @@ const projectsCarousel = () => {
 
   return (
     <div className='container'>
-      <div className='leftChevron'>
-        <i class='fa fa-chevron-left'></i>
-      </div>
+      <StyledIcon icon={["fas", "chevron-circle-left"]} />
       <div className='project'>
         {projects.map((project) => (
           <Project project={project} />
         ))}
       </div>
-      <div className='rightChevron'>
-        <i class='fa fa-chevron-right'></i>
-      </div>
+      <StyledIcon icon={["fas", "chevron-circle-right"]} />
 
       <style jsx>{`
         .container {
