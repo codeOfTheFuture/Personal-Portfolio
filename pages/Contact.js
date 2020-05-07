@@ -1,18 +1,21 @@
 import React from "react";
 import Layout from "../components/Layout";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
     <Layout>
       <div className='contact'>
         <h1>Contact</h1>
-
+        <h2>Please contact me using the form below!</h2>
+        <ContactForm />
         <style jsx>{`
           .contact {
             height: 80vh;
             width: 100%;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-around;
             align-items: center;
           }
         `}</style>
