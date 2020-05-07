@@ -20,8 +20,9 @@ const Project = ({ project }) => {
       <style jsx>{`
         .projectContainer {
           display: flex;
-          justify-content: center;
+          justify-content: space-between;
           align-items: flex-start;
+          padding: 10em;
         }
         .projectMain {
           display: flex;
@@ -30,7 +31,12 @@ const Project = ({ project }) => {
           align-items: center;
         }
         .projectAbout {
+          margin-left: 4em;
           padding: 0 4em;
+        }
+        .projectAbout p {
+          padding: 0;
+          line-height: 2em;
         }
       `}</style>
     </div>
