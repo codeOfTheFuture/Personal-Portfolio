@@ -4,4 +4,11 @@ import {
   faChevronCircleRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faChevronCircleLeft, faChevronCircleRight);
+import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
+library.add(
+  faChevronCircleLeft,
+  faChevronCircleRight,
+  faGithubSquare,
+  faLinkedin
+);

@@ -42,7 +42,6 @@ const projectsCarousel = () => {
       nextProject++;
       setCurrentProject(nextProject);
     }
-    console.log(currentProject);
   };
 
   return (

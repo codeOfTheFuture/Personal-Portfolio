@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Layout from "../components/Layout";
+import SocialMediaLinks from "../components/SocialMediaLinks";
 
 const Home = () => (
   <Layout>
@@ -19,6 +20,9 @@ const Home = () => (
           </h1>
           <div className='portfolio-pic'></div>
           <div className='bg-overlay-bottom'></div>
+          <div className='social-links'>
+            <SocialMediaLinks />
+          </div>
         </div>
         <div className='bg-overlay'></div>
       </div>
@@ -65,7 +69,7 @@ const Home = () => (
           position: absolute;
           z-index: 1;
           top: 28vh;
-          left: 44vw;
+          left: 42vw;
           width: 200px;
           height: 200px;
           background-image: url("/assets/portfolio-pic.jpg");
@@ -74,6 +78,17 @@ const Home = () => (
           background-size: cover;
           border: 5px solid #fff;
           border-radius: 50%;
+        }
+        .social-links {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 75vh;
+          right: 2vw;
+          width: 100%;
+          height: 50px;
+          z-index: 10;
         }
       `}</style>
     </div>
