@@ -10,29 +10,10 @@ const StyledIcon = styled(FontAwesomeIcon)`
   cursor: pointer;
 `;
 
-const projectsCarousel = () => {
+const projectsCarousel = ({ projects }) => {
   let [currentProject, setCurrentProject] = useState(0);
 
-  const projects = [
-    {
-      title: "Cryptolitic",
-      image: "/assets/Cryptolitic.PNG",
-      link: "https://https://cryptolytic-production.netlify.app/main/home",
-      github: "https://github.com/Lambda-School-Labs/cryptolytic-fe",
-      about:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet ut, dolores ratione commodi quo minima aspernatur laudantium aut, odio debitis enim eaque, optio esse. Et praesentium fugiat ipsa ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet ut, dolores ratione commodi quo minima aspernatur laudantium aut, odio debitis enim eaque, optio esse. Et praesentium fugiat ipsa ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet ut, dolores ratione commodi quo minima aspernatur laudantium aut, odio debitis enim eaque, optio esse. Et praesentium fugiat ipsa ratione!",
-    },
-    {
-      title: "WanderLust",
-      image: "/assets/Wanderlust.PNG",
-      link: "https://wanderlust.jeff-oliver.com",
-      github: "https://github.com/wanderlust-1-0",
-      about:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet ut, dolores ratione commodi quo minima aspernatur laudantium aut, odio debitis enim eaque, optio esse. Et praesentium fugiat ipsa ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet ut, dolores ratione commodi quo minima aspernatur laudantium aut, odio debitis enim eaque, optio esse. Et praesentium fugiat ipsa ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet ut, dolores ratione commodi quo minima aspernatur laudantium aut, odio debitis enim eaque, optio esse. Et praesentium fugiat ipsa ratione!",
-    },
-  ];
-
-  const getProject = (projectsArray, direction) => {
+  const getProject = (direction) => {
     let nextProject = currentProject;
     if (direction === "left" && currentProject !== 0) {
       nextProject--;
@@ -46,7 +27,7 @@ const projectsCarousel = () => {
 
   return (
     <div className='container'>
-      <div onClick={() => getProject(projects, "left")}>
+      <div onClick={() => getProject("left")}>
         <StyledIcon icon={["fas", "chevron-circle-left"]} />
       </div>
       <div className='project'>
@@ -57,7 +38,7 @@ const projectsCarousel = () => {
             )
         )}
       </div>
-      <div onClick={() => getProject(projects, "right")}>
+      <div onClick={() => getProject("right")}>
         <StyledIcon icon={["fas", "chevron-circle-right"]} />
       </div>
 
