@@ -15,10 +15,11 @@ const Home = () => (
         <div className='home-bg'>
           <div className='bg-overlay-top'></div>
           <h1 className='title'>
-            Hi, I'm Jeff!
-            <br /> I am a Full Stack Web Developer
+            <span>Jeff Oliver</span> - <span>Full Stack Web Developer</span>
           </h1>
-          <div className='portfolio-pic'></div>
+          <div className='portfolio'>
+            <div className='portfolio-pic'></div>
+          </div>
           <div className='bg-overlay-bottom'></div>
           <div className='social-links'>
             <SocialMediaLinks />
@@ -56,6 +57,9 @@ const Home = () => (
           border-top: 2.5px solid #fff;
         }
         .title {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           position: absolute;
           margin: 0;
           width: 100%;
@@ -65,14 +69,23 @@ const Home = () => (
           text-align: center;
           color: #fff;
         }
+        .title span {
+          margin: 0 1em;
+        }
+        .portfolio {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+        }
         .portfolio-pic {
           position: absolute;
           z-index: 1;
-          top: 28vh;
-          left: 42vw;
           width: 200px;
           height: 200px;
           background-image: url("/assets/portfolio-pic.jpg");
+          background-color: black;
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -85,7 +98,6 @@ const Home = () => (
           align-items: center;
           position: absolute;
           top: 75vh;
-          right: 2vw;
           width: 100%;
           height: 50px;
           z-index: 10;

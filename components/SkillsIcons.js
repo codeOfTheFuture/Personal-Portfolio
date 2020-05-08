@@ -5,7 +5,8 @@ import "../styles/fontawesome";
 
 const StyledIcon = styled(FontAwesomeIcon)`
   color: "black";
-  width: 25px;
+  width: 100px;
+  margin: 0 2em;
 `;
 
 const SkillsIcons = () => {
