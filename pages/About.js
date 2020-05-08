@@ -1,11 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
+import SkillsIcons from "../components/SkillsIcons";
 
 const About = () => {
   return (
     <Layout>
       <div className='about'>
-        <h1>About</h1>
+        <SkillsIcons />
 
         <style jsx>{`
           .about {

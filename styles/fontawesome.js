@@ -4,11 +4,32 @@ import {
   faChevronCircleRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithubSquare,
+  faLinkedin,
+  faReact,
+  faJs,
+  faHtml5,
+  faCss3,
+  faSass,
+  faLess,
+  faNodeJs,
+  faPython,
+  faGit,
+} from "@fortawesome/free-brands-svg-icons";
 
 library.add(
   faChevronCircleLeft,
   faChevronCircleRight,
   faGithubSquare,
-  faLinkedin
+  faLinkedin,
+  faReact,
+  faJs,
+  faHtml5,
+  faCss3,
+  faSass,
+  faLess,
+  faNodeJs,
+  faPython,
+  faGit
 );
