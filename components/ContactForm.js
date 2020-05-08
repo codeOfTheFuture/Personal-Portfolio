@@ -1,17 +1,43 @@
 import React, { useState } from "react";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const formSubmit = (event) => {
+    const form = event.target;
+    const data = new FormData(form);
+
+    const requestOptions = {
+      method: form.method,
+      headers: { Accept: "application/json" },
+      body: JSON.stringify(data),
+    };
+
+    fetch(form.action, requestOptions)
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.log(error));
+  };
 
   return (
-    <form className='form'>
+    <form
+      className='form'
+      method='POST'
+      action='https://formspree.io/xyynyqzr'
+      target='_blank'
+      onSubmit={() => formSubmit()}
+    >
       <div className='form-group'>
-        <input type='text' placeholder='Name' className='form-control' />
-        <input type='email' placeholder='Email' className='form-control' />
+        <input
+          type='text'
+          placeholder='Name'
+          name='name'
+          className='form-control'
+        />
+        <input
+          type='email'
+          placeholder='Email'
+          name='email'
+          className='form-control'
+        />
       </div>
       <textarea
         name='message'
