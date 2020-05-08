@@ -1,8 +1,8 @@
-// import Nav from "./Nav";
+import Navigation from "./Navigation";
 
 const Layout = (props) => (
   <div>
-    {/* <Nav /> */}
+    <Nav />
     {props.children}
   </div>
 );
