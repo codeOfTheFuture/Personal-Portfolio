@@ -6,6 +6,7 @@ const About = () => {
   return (
     <Layout>
       <div className='about-container'>
+        <h1>About Me</h1>
         <div className='about-main'>
           <div className='about-pic'>
             <img src='/assets/about-pic.JPG' alt='Jeff Oliver and Bandit' />
@@ -26,13 +27,19 @@ const About = () => {
           </div>
           <div className='about-text'>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
-              vel in ut delectus? Sint, quibusdam! Quibusdam, harum veritatis.
-              Temporibus reiciendis ipsa, adipisci, eligendi vero explicabo quae
-              deleniti quos nam corporis dignissimos quis possimus
-              necessitatibus perspiciatis id veritatis voluptatem quod fuga
-              magnam incidunt. Delectus dignissimos iusto adipisci est at harum
-              nam?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              omnis quae quam. Accusamus doloremque quas quaerat temporibus aut,
+              error recusandae nihil excepturi. Ratione quam sequi ea rem
+              reprehenderit eos veritatis repudiandae, optio minima recusandae
+              facere accusantium. Neque reprehenderit pariatur dolorem possimus
+              quaerat numquam aspernatur rem dolorum perferendis nesciunt porro
+              delectus dignissimos est, consectetur vitae dolor illum voluptates
+              ipsum corporis amet molestias? Ratione ad repudiandae
+              exercitationem, nam minima, quo fugit optio maiores debitis quod
+              adipisci facere. Libero odit nemo debitis, accusamus ipsa quam
+              aspernatur necessitatibus dolores quae, perferendis reiciendis
+              facilis, nulla nobis adipisci eius cupiditate voluptatum? Voluptas
+              voluptates veritatis est iste?
             </p>
           </div>
         </div>
@@ -44,13 +51,31 @@ const About = () => {
             width: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            // justify-content: space-between;
             align-items: center;
+            margin-top: 10em;
           }
           .about-main {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
+            width: 70%;
+            align-items: flex-start;
+            margin: 8em 4em;
+          }
+          .about-pic {
+            width: 30%;
+          }
+          .about-pic img {
+            border-radius: 5px;
+          }
+          .skills-list {
+            display: flex;
+            flex-direction: column;
             align-items: center;
+            width: 30%;
+          }
+          .about-text {
+            width: 30%;
           }
         `}</style>
       </div>

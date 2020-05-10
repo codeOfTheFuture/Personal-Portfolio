@@ -61,11 +61,11 @@ const Home = () => (
           justify-content: center;
           align-items: center;
           position: absolute;
-          margin: 0;
+          margin-top: 1em;
           width: 100%;
           padding-top: 80px;
           line-height: 1.15;
-          font-size: 24px;
+          font-size: 3rem;
           text-align: center;
           color: #fff;
         }
@@ -82,8 +82,8 @@ const Home = () => (
         .portfolio-pic {
           position: absolute;
           z-index: 1;
-          width: 200px;
-          height: 200px;
+          width: 400px;
+          height: 400px;
           background-image: url("/assets/portfolio-pic.jpg");
           background-color: black;
           background-position: center;
