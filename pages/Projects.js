@@ -7,7 +7,7 @@ const Projects = () => {
     {
       title: "Cryptolitic",
       image: "/assets/Cryptolitic.PNG",
-      link: "https://https://cryptolytic-production.netlify.app/main/home",
+      link: "https://cryptolytic-production.netlify.app/main/home",
       github: "https://github.com/Lambda-School-Labs/cryptolytic-fe",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet ut, dolores ratione commodi quo minima aspernatur laudantium aut, odio debitis enim eaque, optio esse. Et praesentium fugiat ipsa ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet ut, dolores ratione commodi quo minima aspernatur laudantium aut, odio debitis enim eaque, optio esse. Et praesentium fugiat ipsa ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet ut, dolores ratione commodi quo minima aspernatur laudantium aut, odio debitis enim eaque, optio esse. Et praesentium fugiat ipsa ratione!",
