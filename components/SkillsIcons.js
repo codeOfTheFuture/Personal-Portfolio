@@ -7,6 +7,10 @@ const StyledIcon = styled(FontAwesomeIcon)`
   color: "black";
   width: 100px;
   margin: 0 2em;
+
+  @media only screen and (max-width: 600px) {
+    margin: 0 0.4em;
+  }
 `;
 
 const SkillsIcons = () => {
@@ -33,6 +37,11 @@ const SkillsIcons = () => {
           display: flex;
           justify-content: center;
           align-items: center;
+        }
+        @media only screen and (max-width: 600px) {
+          .icon-container {
+            width: 80%;
+          }
         }
       `}</style>
     </div>

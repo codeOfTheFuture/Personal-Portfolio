@@ -57,7 +57,6 @@ const About = () => {
             width: 100%;
             display: flex;
             flex-direction: column;
-            // justify-content: space-between;
             align-items: center;
             margin-top: 10em;
           }
@@ -97,6 +96,34 @@ const About = () => {
           .about-text p {
             margin: 0;
             line-height: 1.5em;
+          }
+          @media only screen and (max-width: 600px) {
+            .about-container {
+              margin-top: 0;
+            }
+            .about-main {
+              flex-direction: column;
+              align-items: center;
+              margin: 4em 1em;
+            }
+            .about-pic {
+              width: 80%;
+            }
+            .skills-list {
+              width: 80%;
+              margin: 2em 0;
+            }
+            .skills-list ul {
+              display: flex;
+
+              flex-wrap: wrap;
+            }
+            .skills-list li {
+              margin: 0 1em;
+            }
+            .about-text {
+              width: 80%;
+            }
           }
         `}</style>
       </div>
