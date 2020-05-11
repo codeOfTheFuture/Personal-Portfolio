@@ -9,6 +9,10 @@ const Home = () => (
       <Head>
         <title>Jeff Oliver - Portfolio</title>
         <link rel='icon' href='/favicon.ico' />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Raleway&display=swap'
+          rel='stylesheet'
+        ></link>
       </Head>
 
       <div className='home-container'>
@@ -101,6 +105,25 @@ const Home = () => (
           width: 100%;
           height: 50px;
           z-index: 10;
+        }
+        @media only screen and (max-width: 600px) {
+          .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            margin-top: 1em;
+            width: 100%;
+            padding-top: 80px;
+            line-height: 1.15;
+            font-size: 1.5rem;
+            text-align: center;
+            color: #fff;
+          }
+          .portfolio-pic {
+            width: 200px;
+            height: 200px;
+          }
         }
       `}</style>
     </div>

@@ -38,6 +38,24 @@ const Project = ({ project }) => {
           padding: 0;
           line-height: 2em;
         }
+        @media only screen and (max-width: 600px) {
+          .projectContainer {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+          }
+          .projectMain {
+            margin-top: 10em;
+          }
+          .projectMain a img {
+            width: 280px;
+          }
+          .projectAbout {
+            margin: 0;
+            padding: 0;
+          }
+        }
       `}</style>
     </div>
   );

@@ -18,7 +18,13 @@ const About = () => {
               <li>Redux</li>
               <li>JavaScript - ES6</li>
               <li>Node Js</li>
+              <li>Express Js</li>
+              <li>Knex Js</li>
+              <li>PostgreSql</li>
+              <li>Sqlite3</li>
+              <li>MongoDb</li>
               <li>Python</li>
+              <li>Git</li>
               <li>Html 5</li>
               <li>Css 3</li>
               <li>Sass</li>
@@ -66,16 +72,31 @@ const About = () => {
             width: 30%;
           }
           .about-pic img {
+            width: 100%;
             border-radius: 5px;
           }
           .skills-list {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
             width: 30%;
           }
+          .skills-list h2 {
+            margin: 0;
+          }
+          .skills-list ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            line-height: 1.5em;
+          }
           .about-text {
             width: 30%;
+          }
+          .about-text p {
+            margin: 0;
+            line-height: 1.5em;
           }
         `}</style>
       </div>

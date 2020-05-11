@@ -49,6 +49,12 @@ const projectsCarousel = ({ projects }) => {
           align-items: center;
           margin: 20em 5em 5em 5em;
         }
+        @media only screen and (max-width: 600px) {
+          .container {
+            // margin: 0;
+            width: 100%;
+          }
+        }
       `}</style>
     </div>
   );
