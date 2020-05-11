@@ -19,7 +19,9 @@ const Home = () => (
         <div className='home-bg'>
           <div className='bg-overlay-top'></div>
           <h1 className='title'>
-            <span>Jeff Oliver</span> - <span>Full Stack Web Developer</span>
+            <span className='name'>Jeff Oliver</span>
+            <span className='hyphen'>-</span>
+            <span>Full Stack Web Developer</span>
           </h1>
           <div className='portfolio'>
             <div className='portfolio-pic'></div>
@@ -109,6 +111,7 @@ const Home = () => (
         @media only screen and (max-width: 600px) {
           .title {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             position: absolute;
@@ -119,6 +122,12 @@ const Home = () => (
             font-size: 1.5rem;
             text-align: center;
             color: #fff;
+          }
+          .title span {
+            margin-bottom: 1em;
+          }
+          .title span.hyphen {
+            display: none;
           }
           .portfolio-pic {
             width: 200px;
