@@ -76,6 +76,25 @@ const ContactForm = () => {
           background-color: white;
           border-radius: 5px;
         }
+        @media only screen and (max-width: 600px) {
+          .form {
+            justify-content: center;
+          }
+          .form-group {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2em;
+          }
+          .form-control {
+            width: 18.5rem;
+            margin: 2em 0;
+          }
+          .message {
+            width: 80%;
+            margin: 0;
+          }
+        }
       `}</style>
     </form>
   );

@@ -18,6 +18,13 @@ const Contact = () => {
             justify-content: space-around;
             align-items: center;
           }
+          @media only screen and (max-width: 600px) {
+            .contact {
+              height: 100%;
+              justify-content: center;
+              text-align: center;
+            }
+          }
         `}</style>
       </div>
     </Layout>
