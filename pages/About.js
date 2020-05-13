@@ -1,10 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Navigation from "../components/Navigation";
 import SkillsIcons from "../components/SkillsIcons";
 
 const About = () => {
   return (
     <Layout>
+      <Navigation />
       <div className='about-container'>
         <h1>About Me</h1>
         <div className='about-main'>

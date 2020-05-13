@@ -1,10 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Navigation from "../components/Navigation";
 import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
     <Layout>
+      <Navigation />
       <div className='contact'>
         <h1>Contact</h1>
         <h2>Please contact me using the form below!</h2>

@@ -1,10 +1,8 @@
-import Navigation from "./Navigation";
-import Hamburger from "./Hamburger";
+// import Navigation from "./Navigation";
 
 const Layout = (props) => (
   <div>
-    <Hamburger />
-    <Navigation />
+    {/* <Navigation /> */}
     {props.children}
   </div>
 );

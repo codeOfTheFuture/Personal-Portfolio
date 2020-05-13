@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Layout from "../components/Layout";
+import Navigation from "../components/Navigation";
 import Carousel from "../components/ProjectsCarousel";
 
 const Projects = () => {
@@ -48,6 +49,7 @@ const Projects = () => {
 
   return (
     <Layout>
+      <Navigation />
       <div className='projects'>
         {/* <h1>Projects</h1> */}
         <Carousel projects={projects} />

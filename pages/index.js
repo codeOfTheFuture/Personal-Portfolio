@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Layout from "../components/Layout";
+import Navigation from "../components/Navigation";
 import SocialMediaLinks from "../components/SocialMediaLinks";
 
 const Home = () => (
@@ -14,7 +15,7 @@ const Home = () => (
           rel='stylesheet'
         ></link>
       </Head>
-
+      <Navigation />
       <div className='home-container'>
         <div className='home-bg'>
           <div className='bg-overlay-top'></div>
@@ -40,7 +41,7 @@ const Home = () => (
           width: 100%;
         }
         .home-bg {
-          height: 100%;
+          height: 100vh;
           width: 100%;
           background-image: url("/assets/home-bg.jpg");
           background-position: center;
