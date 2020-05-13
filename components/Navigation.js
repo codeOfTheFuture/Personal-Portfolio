@@ -141,7 +141,6 @@ const Navigation = () => (
           position: absolute;
           top: 0;
           left: 0;
-          transition: width 0.5s ease-in-out;
           width: 0%;
           height: 100vh;
           visibility: hidden;
@@ -165,6 +164,9 @@ const Navigation = () => (
           justify-content: center;
           align-items: center;
           z-index: 10;
+          visibility: hidden;
+          opacity: 0;
+          transition: visibility 1s, opacity 1.5s ease-in-out;
         }
         .nav > div > ul li {
           margin: 2em 0;
@@ -178,7 +180,10 @@ const Navigation = () => (
           width: 80%;
           transition: width 0.5s ease-in-out;
         }
-        .toggle:checked ~ .nav > div {
+        .toggle:checked ~ .nav > div ul {
+          transition: visibility: 0s, opacity 0s linear;
+          visibility: visible;
+          opacity: 1;
         }
       }
     `}</style>
