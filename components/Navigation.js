@@ -125,7 +125,8 @@ const Navigation = () => (
       }
 
       @media (min-width: 600px) {
-        .hamburger-container {
+        .toggle,
+        .hamburger {
           display: none;
         }
       }
@@ -140,7 +141,8 @@ const Navigation = () => (
           position: absolute;
           top: 0;
           left: 0;
-          width: 80%;
+          transition: width 0.5s ease-in-out;
+          width: 0%;
           height: 100vh;
           visibility: hidden;
           overflow: hidden;
@@ -172,7 +174,11 @@ const Navigation = () => (
         }
 
         .toggle:checked ~ .nav {
-          visibility: hidden;
+          visibility: visible;
+          width: 80%;
+          transition: width 0.5s ease-in-out;
+        }
+        .toggle:checked ~ .nav > div {
         }
       }
     `}</style>
