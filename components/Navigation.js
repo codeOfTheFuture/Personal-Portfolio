@@ -31,11 +31,6 @@ const Navigation = () => (
       </div>
     </nav>
     <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-      }
       .toggle {
         position: absolute;
         top: 6px;
@@ -166,7 +161,6 @@ const Navigation = () => (
           z-index: 10;
           visibility: hidden;
           opacity: 0;
-          transition: visibility 1s, opacity 1.5s ease-in-out;
         }
         .nav > div > ul li {
           margin: 2em 0;
@@ -181,7 +175,7 @@ const Navigation = () => (
           transition: width 0.5s ease-in-out;
         }
         .toggle:checked ~ .nav > div ul {
-          transition: visibility: 0s, opacity 0s linear;
+          transition: visibility: 1s, opacity 1.5s linear;
           visibility: visible;
           opacity: 1;
         }

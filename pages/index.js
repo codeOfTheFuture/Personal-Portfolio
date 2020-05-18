@@ -10,10 +10,6 @@ const Home = () => (
       <Head>
         <title>Jeff Oliver - Portfolio</title>
         <link rel='icon' href='/favicon.ico' />
-        <link
-          href='https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Raleway&display=swap'
-          rel='stylesheet'
-        ></link>
       </Head>
       <Navigation />
       <div className='home-container'>
@@ -48,6 +44,10 @@ const Home = () => (
           background-repeat: no-repeat;
           background-size: cover;
           position: relative;
+        }
+        .home-bg h1 {
+          font-family: Montserrat;
+          letter-spacing: 2px;
         }
         .bg-overlay-top,
         .bg-overlay-bottom {
