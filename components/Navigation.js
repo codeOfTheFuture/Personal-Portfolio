@@ -116,7 +116,9 @@ const Navigation = () => (
       .nav ul li a {
         color: #000;
         text-decoration: none;
+        text-transform: uppercase;
         font-size: 13px;
+        font-weight: bold;
       }
 
       @media (min-width: 600px) {

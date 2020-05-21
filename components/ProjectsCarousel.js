@@ -8,6 +8,12 @@ const StyledIcon = styled(FontAwesomeIcon)`
   color: black;
   width: 50px;
   cursor: pointer;
+  border-radius: 50%;
+
+  &:hover {
+    color: darkgray;
+    background-color: black;
+  }
 `;
 
 const projectsCarousel = ({ projects }) => {
@@ -47,7 +53,9 @@ const projectsCarousel = ({ projects }) => {
           display: flex;
           justify-content: center;
           align-items: center;
-          margin: 20em 5em 5em 5em;
+          padding: 2em;
+          border: 2px solid black;
+          border-radius: 5px;
         }
         @media only screen and (max-width: 600px) {
           .container {

@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/fontawesome";
 
 const StyledIcon = styled(FontAwesomeIcon)`
-  color: white;
+  color: lightgrey;
   width: 50px;
   cursor: pointer;
   box-shadow: 0 0 0 2px whitesmoke;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 5px;
   box-sizing: border-box;
 
@@ -38,7 +38,7 @@ const SocialMediaLinks = () => {
           display: flex;
           justify-content: space-around;
           align-items: center;
-          width: 15%;
+          width: 20%;
           box-sizing: border-box;
         }
       `}</style>

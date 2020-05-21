@@ -51,13 +51,13 @@ const Projects = () => {
     <Layout>
       <Navigation />
       <div className='projects'>
-        {/* <h1>Projects</h1> */}
+        <h1>Portfolio</h1>
         <Carousel projects={projects} />
         <style jsx>{`
           .projects {
-            height: 80vh;
             width: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
           }

@@ -36,7 +36,6 @@ const Project = ({ project }) => {
           display: flex;
           justify-content: space-between;
           align-items: flex-start;
-          padding: 10em;
         }
         .projectMain {
           display: flex;
@@ -44,20 +43,40 @@ const Project = ({ project }) => {
           justify-content: center;
           align-items: center;
         }
+        .projectMain img {
+          width: 30vw;
+          padding: 0 4em;
+        }
         .projectMain .github-link {
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-top: 2em;
+          margin-top: 0.5em;
           text-decoration: none;
+          padding: 0.5em 2em;
+          border: 1px solid black;
+          border-radius: 5px;
+          font-weight: bold;
+        }
+        .projectMain .github-link:hover {
+          color: black;
+          background-color: darkgrey;
         }
         .projectMain .github-link:visited {
           color: black;
         }
         .projectAbout {
-          margin-left: 4em;
           padding: 0 4em;
+          height: 50vh;
+          width: 30vw;
+          overflow: scroll;
         }
+        // .projectAbout::-webkit-scrollbar {
+        //   width: 20px !important;
+        // }
+        // .projectAbout::-webkit-scrollbar-track {
+        //   color: black !important;
+        // }
         .projectAbout p {
           padding: 0;
           line-height: 2em;
