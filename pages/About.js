@@ -55,19 +55,15 @@ const About = () => {
 
         <style jsx>{`
           .about-container {
-            height: 80vh;
-            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 10em;
           }
           .about-main {
             display: flex;
-            justify-content: space-around;
-            width: 70%;
-            align-items: flex-start;
-            margin: 8em 4em;
+            justify-content: center;
+            width: 90%;
+            margin: 2em 0;
           }
           .about-pic {
             width: 30%;
@@ -96,8 +92,11 @@ const About = () => {
             width: 30%;
           }
           .about-text p {
+            height: 60vh;
             margin: 0;
+            padding: 0 1em;
             line-height: 1.5em;
+            overflow: scroll;
           }
           @media only screen and (max-width: 600px) {
             .about-container {
