@@ -13,18 +13,22 @@ const Contact = () => {
         <ContactForm />
         <style jsx>{`
           .contact {
-            height: 80vh;
-            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
+            width: 100%;
+          }
+          .contact h1 {
+            margin-bottom: 0;
           }
           @media only screen and (max-width: 600px) {
             .contact {
-              height: 100%;
               justify-content: center;
               text-align: center;
+            }
+            .contact h1 {
+              margin-top: 3em;
             }
           }
         `}</style>

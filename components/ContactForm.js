@@ -42,8 +42,8 @@ const ContactForm = () => {
       <textarea
         name='message'
         id='message'
-        cols='194'
-        rows='20'
+        cols='110'
+        rows='10'
         className='message'
         placeholder='Message'
       ></textarea>
@@ -58,23 +58,29 @@ const ContactForm = () => {
         }
         .form-group {
           display: flex;
-          margin-bottom: 4em;
+          margin-bottom: 2em;
         }
         .form-control {
-          width: 39.5rem;
+          width: 20.5rem;
           margin: 0 4em;
-          padding: 2em;
+          padding: 1.5em;
           border-radius: 5px;
         }
         .message {
-          padding 2em;
+          padding 1.5em;
           border-radius: 5px;
         }
         .btn {
-          margin-top: 4em;
-          padding: 2em 4em;
+          margin-top: 1.2em;
+          padding: 1.5em 2em;
           background-color: white;
           border-radius: 5px;
+          font-size: 1em;
+          cursor: pointer;
+        }
+        .btn:hover {
+          background-color: black;
+          color: white;
         }
         @media only screen and (max-width: 600px) {
           .form {

@@ -45,7 +45,9 @@ const Project = ({ project }) => {
         }
         .projectMain img {
           width: 30vw;
-          padding: 0 4em;
+          margin: 0 4em;
+          padding: 0.2em;
+          border: 1px solid black;
         }
         .projectMain .github-link {
           display: flex;
@@ -66,7 +68,8 @@ const Project = ({ project }) => {
           color: black;
         }
         .projectAbout {
-          padding: 0 4em;
+          margin: 0.5em 2em 0 0;
+          padding: 0 2em;
           height: 50vh;
           width: 30vw;
           overflow: scroll;
