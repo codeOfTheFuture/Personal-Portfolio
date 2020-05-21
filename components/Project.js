@@ -33,8 +33,8 @@ const Project = ({ project }) => {
         <h3>{project.about.techStack}</h3>
         <p>{project.about.techStackList}</p>
         <ul>
-          {project.about.bulletPoints.map((bulletPoint) => {
-            return <li>{bulletPoint}</li>;
+          {project.about.bulletPoints.map((bulletPoint, index) => {
+            return <li key={index}>{bulletPoint}</li>;
           })}
         </ul>
       </div>
@@ -76,7 +76,11 @@ const Project = ({ project }) => {
           color: black;
         }
         .projectAbout {
-          margin: 0.5em 2em 0 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 0.5em;
           padding: 0 2em;
           height: 50vh;
           width: 30vw;
@@ -106,15 +110,15 @@ const Project = ({ project }) => {
             width: 280px;
           }
           .projectAbout {
-            margin: 0;
-            padding: 0;
-            width: 100%;
+            margin-top: 2em;
+            padding: 0 1em;
+            width: 70%;
             height: 100%;
             overflow: none;
           }
-          .projectAbout p {
-            padding: 0 3em;
-          }
+          // .projectAbout p {
+          //   padding: 0 3em;
+          // }
         }
       `}</style>
     </div>

@@ -109,7 +109,6 @@ const Projects = () => {
         <Carousel projects={projects} />
         <style jsx>{`
           .projects {
-            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -126,8 +125,11 @@ const Projects = () => {
             text-shadow: 2px 2px 2px red;
           }
           @media only screen and (max-width: 600px) {
+            .projects {
+              // width: 80%;
+            }
             .projects h1 {
-              margin: 2em;
+              margin: 3em 0 1em 0;
             }
           }
         `}</style>

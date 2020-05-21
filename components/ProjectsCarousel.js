@@ -14,6 +14,11 @@ const StyledIcon = styled(FontAwesomeIcon)`
     color: darkgray;
     background-color: black;
   }
+
+  @media only screen and (max-width: 600px) {
+    /* width: 35px !important; */
+    margin: 0 1em;
+  }
 `;
 
 const projectsCarousel = ({ projects }) => {
@@ -33,7 +38,7 @@ const projectsCarousel = ({ projects }) => {
 
   return (
     <div className='container'>
-      <div onClick={() => getProject("left")}>
+      <div className='chevron-left' onClick={() => getProject("left")}>
         <StyledIcon icon={["fas", "chevron-circle-left"]} />
       </div>
       <div className='project'>
@@ -44,7 +49,7 @@ const projectsCarousel = ({ projects }) => {
             )
         )}
       </div>
-      <div onClick={() => getProject("right")}>
+      <div className='chevron-right' onClick={() => getProject("right")}>
         <StyledIcon icon={["fas", "chevron-circle-right"]} />
       </div>
 
@@ -59,8 +64,17 @@ const projectsCarousel = ({ projects }) => {
         }
         @media only screen and (max-width: 600px) {
           .container {
-            // margin: 0;
-            width: 100%;
+            flex-wrap: wrap;
+            width: 75%;
+          }
+          .container .chevron-left {
+            order: 1;
+          }
+          .container .chevron-right {
+            order: 2;
+          }
+          .container .project {
+            order: 3;
           }
         }
       `}</style>
