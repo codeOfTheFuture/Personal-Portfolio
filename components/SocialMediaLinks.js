@@ -16,6 +16,10 @@ const StyledIcon = styled(FontAwesomeIcon)`
     color: red;
     width: 55px;
   }
+
+  @media only screen and (max-width: 600px) {
+    margin: 0 0.5em;
+  }
 `;
 
 const SocialMediaLinks = () => {

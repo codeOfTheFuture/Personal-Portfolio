@@ -88,15 +88,21 @@ const Project = ({ project }) => {
             align-items: center;
             padding: 0;
           }
-          .projectMain {
-            margin-top: 10em;
-          }
+          // .projectMain {
+          //   margin-top: 10em;
+          // }
           .projectMain a img {
             width: 280px;
           }
           .projectAbout {
             margin: 0;
             padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: none;
+          }
+          .projectAbout p {
+            padding: 0 3em;
           }
         }
       `}</style>

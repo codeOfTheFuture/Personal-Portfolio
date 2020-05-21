@@ -61,6 +61,11 @@ const Projects = () => {
             justify-content: center;
             align-items: center;
           }
+          @media only screen and (max-width: 600px) {
+            .projects h1 {
+              margin: 2em;
+            }
+          }
         `}</style>
       </div>
     </Layout>
