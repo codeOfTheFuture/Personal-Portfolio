@@ -1,14 +1,28 @@
 import React from "react";
+import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../styles/fontawesome";
+
+const StyledIcon = styled(FontAwesomeIcon)`
+  color: "black";
+  width: 18px;
+  margin: 0 1em;
+
+  @media only screen and (max-width: 600px) {
+    /* margin: 0 0.4em; */
+  }
+`;
 
 const Project = ({ project }) => {
   return (
     <div className='projectContainer'>
       <div className='projectMain'>
+        <h2>{project.title}</h2>
         <a href={project.link} target='_blank'>
           <img src={project.image} alt={project.title} />
         </a>
-        <h2>{project.title}</h2>
-        <a href={project.github} target='_blank'>
+        <a href={project.github} target='_blank' className='github-link'>
+          <StyledIcon icon={["fab", "github"]} />
           View Github
         </a>
       </div>
@@ -29,6 +43,16 @@ const Project = ({ project }) => {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+        }
+        .projectMain .github-link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 2em;
+          text-decoration: none;
+        }
+        .projectMain .github-link:visited {
+          color: black;
         }
         .projectAbout {
           margin-left: 4em;

@@ -2,6 +2,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faChevronCircleLeft,
   faChevronCircleRight,
+  faEnvelopeSquare,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -16,6 +17,7 @@ import {
   faNodeJs,
   faPython,
   faGit,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
 library.add(
@@ -31,5 +33,7 @@ library.add(
   faLess,
   faNodeJs,
   faPython,
-  faGit
+  faGit,
+  faGithub,
+  faEnvelopeSquare
 );

@@ -17,7 +17,7 @@ const Home = () => (
           <div className='bg-overlay-top'></div>
           <h1 className='title'>
             <span className='name'>Jeff Oliver</span>
-            <span className='hyphen'>-</span>
+            <span className='hyphen'>|</span>
             <span>Full Stack Web Developer</span>
           </h1>
           <div className='portfolio'>
@@ -37,6 +37,9 @@ const Home = () => (
           width: 100%;
         }
         .home-bg {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           height: 100vh;
           width: 100%;
           background-image: url("/assets/home-bg.jpg");
@@ -46,8 +49,17 @@ const Home = () => (
           position: relative;
         }
         .home-bg h1 {
+          margin-top: 3em;
+          padding: 0.5em 0;
           font-family: Montserrat;
           letter-spacing: 2px;
+          width: 70%;
+          color: black;
+          background-color: lightgrey;
+          border-radius: 20px;
+          border: 1px solid black;
+          box-shadow: 0 0 0 4px whitesmoke;
+          text-shadow: 2px 2px 2px red;
         }
         .bg-overlay-top,
         .bg-overlay-bottom {
