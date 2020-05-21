@@ -59,6 +59,16 @@ const About = () => {
             flex-direction: column;
             align-items: center;
           }
+          .about-container h1 {
+            font-family: Montserrat;
+            background-color: lightgrey;
+            letter-spacing: 2px;
+            padding: 0.3em 0.5em;
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 0 0 0 4px whitesmoke;
+            text-shadow: 2px 2px 2px red;
+          }
           .about-main {
             display: flex;
             justify-content: center;

@@ -61,6 +61,16 @@ const Projects = () => {
             justify-content: center;
             align-items: center;
           }
+          .projects h1 {
+            font-family: Montserrat;
+            background-color: lightgrey;
+            letter-spacing: 2px;
+            padding: 0.3em 0.5em;
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 0 0 0 4px whitesmoke;
+            text-shadow: 2px 2px 2px red;
+          }
           @media only screen and (max-width: 600px) {
             .projects h1 {
               margin: 2em;
