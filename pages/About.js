@@ -13,45 +13,18 @@ const About = () => {
           <div className='about-pic'>
             <img src='/assets/about-pic.JPG' alt='Jeff Oliver and Bandit' />
           </div>
-          <div className='skills-list'>
-            <h2>Skills</h2>
-            <ul>
-              <li>React</li>
-              <li>Redux</li>
-              <li>JavaScript - ES6</li>
-              <li>Node Js</li>
-              <li>Express Js</li>
-              <li>Knex Js</li>
-              <li>PostgreSql</li>
-              <li>Sqlite3</li>
-              <li>MongoDb</li>
-              <li>Python</li>
-              <li>Git</li>
-              <li>Html 5</li>
-              <li>Css 3</li>
-              <li>Sass</li>
-              <li>Less</li>
-            </ul>
-          </div>
+          <SkillsIcons />
           <div className='about-text'>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-              omnis quae quam. Accusamus doloremque quas quaerat temporibus aut,
-              error recusandae nihil excepturi. Ratione quam sequi ea rem
-              reprehenderit eos veritatis repudiandae, optio minima recusandae
-              facere accusantium. Neque reprehenderit pariatur dolorem possimus
-              quaerat numquam aspernatur rem dolorum perferendis nesciunt porro
-              delectus dignissimos est, consectetur vitae dolor illum voluptates
-              ipsum corporis amet molestias? Ratione ad repudiandae
-              exercitationem, nam minima, quo fugit optio maiores debitis quod
-              adipisci facere. Libero odit nemo debitis, accusamus ipsa quam
-              aspernatur necessitatibus dolores quae, perferendis reiciendis
-              facilis, nulla nobis adipisci eius cupiditate voluptatum? Voluptas
-              voluptates veritatis est iste?
+              Highly motivated full-stack web developer with a passion for
+              building software that improves people's lives. I began my
+              programming journey as a self-taught developer 2+ years ago,
+              learning the core fundamentals of the web, and am now a recent
+              graduate of a 9-month coding boot-camp. I am highly skilled in
+              multiple web technologies including React, Redux, and Node JS.
             </p>
           </div>
         </div>
-        <SkillsIcons />
 
         <style jsx>{`
           .about-container {
@@ -89,22 +62,13 @@ const About = () => {
             align-items: center;
             width: 30%;
           }
-          .skills-list h2 {
-            margin: 0;
-          }
-          .skills-list ul {
-            padding: 0;
-            list-style: none;
-            text-align: center;
-            line-height: 1.5em;
-          }
           .about-text {
-            width: 30%;
+            width: 35%;
           }
           .about-text p {
-            height: 60vh;
+            height: 62vh;
             margin: 0;
-            padding: 0 1em;
+            padding: 0 2em;
             line-height: 1.5em;
             overflow: scroll;
           }

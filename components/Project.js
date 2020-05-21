@@ -28,7 +28,15 @@ const Project = ({ project }) => {
       </div>
 
       <div className='projectAbout'>
-        <p>{project.about}</p>
+        <h3>{project.about.projectDesc}</h3>
+        <p>{project.about.projectDescText}</p>
+        <h3>{project.about.techStack}</h3>
+        <p>{project.about.techStackList}</p>
+        <ul>
+          {project.about.bulletPoints.map((bulletPoint) => {
+            return <li>{bulletPoint}</li>;
+          })}
+        </ul>
       </div>
 
       <style jsx>{`
