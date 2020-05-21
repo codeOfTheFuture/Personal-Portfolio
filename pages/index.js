@@ -123,23 +123,22 @@ const Home = () => (
             justify-content: center;
             align-items: center;
             position: absolute;
-            margin-top: 1em;
-            width: 100%;
-            padding-top: 80px;
+            margin-top: 7em;
+            width: 80%;
             line-height: 1.15;
-            font-size: 1.5rem;
+            font-size: 1rem;
             text-align: center;
-            color: #fff;
+            color: black;
           }
           .title span {
-            margin-bottom: 1em;
+            margin: 0.3em 0;
           }
           .title span.hyphen {
             display: none;
           }
           .portfolio-pic {
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: 100px;
           }
         }
       `}</style>
