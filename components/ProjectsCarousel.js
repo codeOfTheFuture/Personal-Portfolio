@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSwipeable, Swipeable } from "react-swipeable";
 import Project from "../components/Project";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,6 +24,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
 
 const projectsCarousel = ({ projects }) => {
   let [currentProject, setCurrentProject] = useState(0);
+  let [grab, setGrab] = useState(false);
 
   const getProject = (direction) => {
     let nextProject = currentProject;
@@ -36,8 +38,17 @@ const projectsCarousel = ({ projects }) => {
     }
   };
 
+  const handlers = useSwipeable({
+    onSwiping: () => setGrab(true),
+    onSwiped: () => setGrab(false),
+    onSwipedLeft: () => getProject("left"),
+    onSwipedRight: () => getProject("right"),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  });
+
   return (
-    <div className='container'>
+    <div className={grab ? "container mousedown" : "container"} {...handlers}>
       <div className='chevron-left' onClick={() => getProject("left")}>
         <StyledIcon icon={["fas", "chevron-circle-left"]} />
       </div>
@@ -61,6 +72,10 @@ const projectsCarousel = ({ projects }) => {
           padding: 2em;
           border: 2px solid black;
           border-radius: 5px;
+          cursor: grab;
+        }
+        .mousedown {
+          cursor: grabbing;
         }
         @media only screen and (max-width: 600px) {
           .container {

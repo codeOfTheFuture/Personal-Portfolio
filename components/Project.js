@@ -50,10 +50,10 @@ const Project = ({ project }) => {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          margin: 0 4em;
         }
         .projectMain img {
           width: 30vw;
-          margin: 0 4em;
           padding: 0.2em;
           border: 1px solid black;
         }
@@ -84,14 +84,21 @@ const Project = ({ project }) => {
           padding: 0 2em;
           height: 50vh;
           width: 30vw;
-          overflow: scroll;
+          overflow-y: scroll;
         }
-        // .projectAbout::-webkit-scrollbar {
-        //   width: 20px !important;
-        // }
-        // .projectAbout::-webkit-scrollbar-track {
-        //   color: black !important;
-        // }
+        .projectAbout::-webkit-scrollbar {
+          width: 8px;
+          background: whitesmoke;
+        }
+        .projectAbout::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey;
+          border-radius: 10px;
+        }
+        .projectAbout::-webkit-scrollbar-thumb {
+          background: darkgrey;
+          border-radius: 10px;
+          height: 50px;
+        }
         .projectAbout p {
           padding: 0;
           line-height: 2em;
@@ -103,9 +110,6 @@ const Project = ({ project }) => {
             align-items: center;
             padding: 0;
           }
-          // .projectMain {
-          //   margin-top: 10em;
-          // }
           .projectMain a img {
             width: 280px;
           }
@@ -114,11 +118,8 @@ const Project = ({ project }) => {
             padding: 0 1em;
             width: 70%;
             height: 100%;
-            overflow: none;
+            overflow-y: none;
           }
-          // .projectAbout p {
-          //   padding: 0 3em;
-          // }
         }
       `}</style>
     </div>
