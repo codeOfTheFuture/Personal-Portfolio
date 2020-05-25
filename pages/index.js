@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Navigation from "../components/Navigation";
+import PortfolioImg from "../components/PortfolioImg";
 import SocialMediaLinks from "../components/SocialMediaLinks";
 
 const Home = () => (
@@ -21,7 +22,7 @@ const Home = () => (
             <span>Full Stack Web Developer</span>
           </h1>
           <div className='portfolio'>
-            <div className='portfolio-pic'></div>
+            <PortfolioImg />
           </div>
           <div className='bg-overlay-bottom'></div>
           <div className='social-links'>
@@ -40,7 +41,7 @@ const Home = () => (
           display: flex;
           flex-direction: column;
           align-items: center;
-          height: 100vh;
+          height: 92vh;
           width: 100%;
           background-image: url("/assets/home-bg.jpg");
           background-position: center;
@@ -56,18 +57,18 @@ const Home = () => (
           background-color: rgba(0, 0, 0, 0.9);
         }
         .bg-overlay-top {
-          border-bottom: 2.5px solid whitesmoke;
+          // border-bottom: 2.5px solid whitesmoke;
         }
         .bg-overlay-bottom {
           top: 50%;
-          border-top: 2.5px solid whitesmoke;
+          // border-top: 2.5px solid whitesmoke;
         }
         .title {
           display: flex;
           justify-content: center;
           align-items: center;
           position: absolute;
-          margin-top: 2em;
+          margin-top: 1em;
           padding: 0.5em 0;
           width: 65%;
           font-family: Montserrat;
@@ -80,7 +81,7 @@ const Home = () => (
           border-radius: 20px;
           border: 1px solid black;
           box-shadow: 0 0 0 4px whitesmoke;
-          text-shadow: 2px 2px 2px red;
+          // text-shadow: 2px 2px 2px red;
         }
         .title span {
           margin: 0 0.5em;
@@ -91,20 +92,6 @@ const Home = () => (
           align-items: center;
           width: 100%;
           height: 100%;
-        }
-        .portfolio-pic {
-          position: absolute;
-          z-index: 1;
-          width: 200px;
-          height: 200px;
-          background-image: url("/assets/portfolio-pic.jpg");
-          background-color: black;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          border: 5px solid whitesmoke;
-          border-radius: 50%;
-          box-shadow: 0 0 0 1px red;
         }
         .social-links {
           display: flex;

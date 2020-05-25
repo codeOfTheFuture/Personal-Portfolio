@@ -44,13 +44,14 @@ const Project = ({ project }) => {
           display: flex;
           justify-content: space-between;
           align-items: flex-start;
+          margin: 0 2em;
         }
         .projectMain {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          margin: 0 4em;
+          margin: 0 2em;
         }
         .projectMain img {
           width: 30vw;
@@ -78,10 +79,10 @@ const Project = ({ project }) => {
         .projectAbout {
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: flex-start;
           align-items: center;
-          margin-top: 0.5em;
-          padding: 0 2em;
+          margin: 0.5em 2em;
+          padding: 0 1em;
           height: 50vh;
           width: 30vw;
           overflow-y: scroll;

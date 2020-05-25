@@ -13,7 +13,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
   box-sizing: border-box;
 
   &:hover {
-    color: red;
+    color: rgba(255, 0, 0, 0.3);
     width: 55px;
   }
 
@@ -28,7 +28,7 @@ const SocialMediaLinks = () => {
       <a href='https://github.com/codeOfTheFuture' target='_blank'>
         <StyledIcon icon={["fab", "github-square"]} />
       </a>
-      <a href='' target='_blank'>
+      <a href='mailto:jeffoliver@gmail.com' target='_blank'>
         <StyledIcon icon={["fa", "envelope-square"]} />
       </a>
       <a

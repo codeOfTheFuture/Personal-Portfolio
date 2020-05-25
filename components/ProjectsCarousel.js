@@ -70,8 +70,6 @@ const projectsCarousel = ({ projects }) => {
           justify-content: center;
           align-items: center;
           padding: 2em;
-          border: 2px solid black;
-          border-radius: 5px;
           cursor: grab;
         }
         .mousedown {

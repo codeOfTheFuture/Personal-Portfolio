@@ -70,7 +70,7 @@ const About = () => {
             margin: 0;
             padding: 0 2em;
             line-height: 1.5em;
-            overflow: scroll;
+            overflow-y: scroll;
           }
           @media only screen and (max-width: 600px) {
             .about-container {
@@ -98,6 +98,9 @@ const About = () => {
             }
             .about-text {
               width: 80%;
+            }
+            .about-text p {
+              overflow-y: none;
             }
           }
         `}</style>
