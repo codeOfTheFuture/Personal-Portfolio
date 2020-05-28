@@ -40,7 +40,6 @@ const About = () => {
             border: 1px solid black;
             border-radius: 20px;
             box-shadow: 0 0 0 4px whitesmoke;
-            text-shadow: 2px 2px 2px red;
           }
           .about-main {
             display: flex;
@@ -69,7 +68,7 @@ const About = () => {
             height: 62vh;
             margin: 0;
             padding: 0 2em;
-            line-height: 1.5em;
+            line-height: 2em;
             overflow-y: scroll;
           }
           .about-text p::-webkit-scrollbar {

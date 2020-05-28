@@ -7,6 +7,11 @@ const Layout = (props) => (
         margin: 0;
         font-family: Raleway, Helvetica, sans-serif;
       }
+      h1,
+      h2,
+      h3 {
+        font-family: Montserrat, Helvetica, sans-serif;
+      }
     `}</style>
   </div>
 );

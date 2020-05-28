@@ -120,7 +120,6 @@ const Projects = () => {
             border: 1px solid black;
             border-radius: 20px;
             box-shadow: 0 0 0 4px whitesmoke;
-            text-shadow: 2px 2px 2px red;
           }
           @media only screen and (max-width: 600px) {
             .projects {

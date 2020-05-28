@@ -71,7 +71,6 @@ const Home = () => (
           margin-top: 1em;
           padding: 0.5em 0;
           width: 65%;
-          font-family: Montserrat;
           line-height: 1.15;
           letter-spacing: 2px;
           font-size: 2em;
@@ -81,7 +80,6 @@ const Home = () => (
           border-radius: 20px;
           border: 1px solid black;
           box-shadow: 0 0 0 4px whitesmoke;
-          // text-shadow: 2px 2px 2px red;
         }
         .title span {
           margin: 0 0.5em;

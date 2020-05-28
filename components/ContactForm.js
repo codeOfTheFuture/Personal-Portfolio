@@ -94,6 +94,9 @@ const ContactForm = () => {
           border: 2px solid red;
           border-radius: 5px;
         }
+        .input::-webkit-input-placeholder {
+          font-family: Raleway, Helvetica, sans-serif;
+        }
         .message {
           box-sizing: border-box;
           padding 1.5em;

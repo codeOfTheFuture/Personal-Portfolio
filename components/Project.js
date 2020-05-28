@@ -62,6 +62,7 @@ const Project = ({ project }) => {
           display: flex;
           justify-content: center;
           align-items: center;
+          color: black;
           margin-top: 0.5em;
           text-decoration: none;
           padding: 0.5em 2em;
@@ -85,6 +86,7 @@ const Project = ({ project }) => {
           padding: 0 1em;
           height: 50vh;
           width: 30vw;
+          line-height: 2em;
           overflow-y: scroll;
         }
         .projectAbout::-webkit-scrollbar {
@@ -102,7 +104,6 @@ const Project = ({ project }) => {
         }
         .projectAbout p {
           padding: 0;
-          line-height: 2em;
         }
         @media only screen and (max-width: 600px) {
           .projectContainer {
