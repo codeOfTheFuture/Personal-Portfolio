@@ -26,56 +26,90 @@ const ContactForm = () => {
       onSubmit={() => formSubmit()}
     >
       <div className='form-group'>
-        <input
-          type='text'
-          placeholder='Name'
-          name='name'
-          className='form-control'
-        />
-        <input
-          type='email'
-          placeholder='Email'
-          name='email'
-          className='form-control'
-        />
+        <div className='form-control'>
+          <label htmlFor='name' className='label'>
+            Name
+          </label>
+          <input type='text' placeholder='Name' name='name' className='input' />
+        </div>
+        <div className='form-control'>
+          <label htmlFor='email' className='label'>
+            Email
+          </label>
+          <input
+            type='email'
+            placeholder='Email'
+            name='email'
+            className='input'
+          />
+        </div>
       </div>
-      <textarea
-        name='message'
-        id='message'
-        cols='110'
-        rows='10'
-        className='message'
-        placeholder='Message'
-      ></textarea>
+      <div className='form-control'>
+        <label htmlFor='message' className='label'>
+          Message
+        </label>
+        <textarea
+          name='message'
+          id='message'
+          cols='10'
+          rows='7'
+          className='message'
+          placeholder='Message'
+        ></textarea>
+      </div>
       <button className='btn'>Send Message</button>
       <style jsx>{`
         .form {
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
+          justify-content: center;
           align-items: center;
-          width: 100%;
+          width: 60%;
         }
         .form-group {
           display: flex;
+          justify-content: center;
+          align-items: center;
           margin-bottom: 2em;
+          width: 100%;
         }
         .form-control {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+        }
+        .label {
+          width: 100%;
+          text-align: left;
+          margin: 0 0 0.5em 0.5em;
+        }
+        .input {
           width: 20.5rem;
-          margin: 0 4em;
+          // margin: 0 4em;
           padding: 1.5em;
           border-radius: 5px;
         }
+        .input:focus {
+          border: 2px solid red;
+          border-radius: 5px;
+        }
         .message {
+          box-sizing: border-box;
           padding 1.5em;
+          border-radius: 5px;
+          width: 100%;
+        }
+        .message:focus {
+          border: 2px solid red;
           border-radius: 5px;
         }
         .btn {
           margin-top: 1.2em;
-          padding: 1.5em 2em;
+          padding: 1em 1.5em;
           background-color: white;
           border-radius: 5px;
-          font-size: 1em;
+          font-size: 0.8em;
           cursor: pointer;
         }
         .btn:hover {
@@ -92,7 +126,7 @@ const ContactForm = () => {
             align-items: center;
             margin-bottom: 2em;
           }
-          .form-control {
+          .input {
             width: 18.5rem;
             margin: 2em 0;
           }

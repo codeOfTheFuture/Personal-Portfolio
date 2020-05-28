@@ -30,6 +30,9 @@ const Contact = () => {
             box-shadow: 0 0 0 4px whitesmoke;
             text-shadow: 2px 2px 2px red;
           }
+          .contact h2 {
+            font-size: 1.3em;
+          }
           @media only screen and (max-width: 600px) {
             .contact {
               justify-content: center;
