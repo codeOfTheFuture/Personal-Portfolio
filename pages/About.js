@@ -72,6 +72,10 @@ const About = () => {
             line-height: 1.5em;
             overflow-y: scroll;
           }
+          .about-text p::-webkit-scrollbar {
+            width: 8px;
+            background: whitesmoke;
+          }
           @media only screen and (max-width: 600px) {
             .about-container {
               margin-top: 0;

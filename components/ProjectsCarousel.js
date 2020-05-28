@@ -6,16 +6,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/fontawesome";
 
 const StyledIcon = styled(FontAwesomeIcon)`
-  color: black;
+  color: darkgray;
+  background-color: black;
   width: 50px;
   cursor: pointer;
   border-radius: 50%;
-
   &:hover {
-    color: darkgray;
-    background-color: black;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
   }
-
   @media only screen and (max-width: 600px) {
     /* width: 35px !important; */
     margin: 0 1em;

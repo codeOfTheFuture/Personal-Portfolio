@@ -64,19 +64,18 @@ const Projects = () => {
     {
       title: "World Problems Index",
       image: "/assets/WorldProblemIndex.PNG",
-      link: "https://https://adoring-yonath-183148.netlify.app/",
+      link: "https://adoring-yonath-183148.netlify.app/",
       github: "https://github.com/codeOfTheFuture/Backend-1",
       about: {
         projectDesc: "Project description: ",
         projectDescText:
-          "Developed to help people new to cryptocurrency understand arbitrage trading between exchanges. Provides trading recommendations and historical arbitrage data to save users time from doing their own technical analysis.",
+          "Developed to investigate world issues, rally behind a solution and use technology to solve problems around the world. We use use the power of numbers to amplify our voice and get issues resolved.",
         techStack: "Tech Stack: ",
-        techStackList:
-          "React | Redux | Canvas Js | Node Js | Express Js | Firebase authentication",
+        techStackList: "React | Redux | Node Js | Mongoose | MongoDb",
         bulletPoints: [
-          "Contributed primarily on the react front-end along with some back-end contributions integrating the firebase admin SDK.",
-          "Built candlestick chart using Canvas Js to display data from a data science PostgreSQL database.",
-          "Collaborated with a team of 5 web developers and 3 data scientists to complete the project within a 6-week deadline.",
+          "Contributed in two different roles, as project manager as well as back-end developer.",
+          "As project manager, I was responsible for leadership for the team, setup of a Trello Board, setup of a github organization and repositories, hosting a daily standup, and assisting team members with any blockers",
+          "As back-end developer, I was solely responsible for developing a REST api using Node Js and Express Js, and creating a database using MongoDb Atlas.",
         ],
       },
     },
@@ -88,14 +87,13 @@ const Projects = () => {
       about: {
         projectDesc: "Project description: ",
         projectDescText:
-          "Developed to help people new to cryptocurrency understand arbitrage trading between exchanges. Provides trading recommendations and historical arbitrage data to save users time from doing their own technical analysis.",
+          "Developed for a user to be able to create, edit, and delete url links as well as group them within user created catagories. Users also have the ability to make a detailed summery for each webpage to document activity or take notes",
         techStack: "Tech Stack: ",
-        techStackList:
-          "React | Redux | Canvas Js | Node Js | Express Js | Firebase authentication",
+        techStackList: "HTML | CSS  | JavaScript (ES6+)",
         bulletPoints: [
-          "Contributed primarily on the react front-end along with some back-end contributions integrating the firebase admin SDK.",
-          "Built candlestick chart using Canvas Js to display data from a data science PostgreSQL database.",
-          "Collaborated with a team of 5 web developers and 3 data scientists to complete the project within a 6-week deadline.",
+          "Contributed primarily on building a marketing page using HTML, CSS, and JavaScript",
+          "Built a landing page with a call to action link to the react application.",
+          "Collaborated with the front-end react developer to develop a general UI design theme, fonts, color scheme, etc., to be implemented across marketing-page and react application.",
         ],
       },
     },
