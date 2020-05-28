@@ -7,6 +7,9 @@ const Layout = (props) => (
         margin: 0;
         font-family: Raleway, Helvetica, sans-serif;
       }
+      :global(body)::-webkit-scrollbar {
+        display: none;
+      }
       h1,
       h2,
       h3 {
